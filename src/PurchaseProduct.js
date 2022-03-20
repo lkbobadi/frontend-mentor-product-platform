@@ -1,12 +1,37 @@
+import React, { useState } from "react";
 import "./Purchase.css";
 
 export default function PurchaseProduct() {
+  let [quantity, setQuantity] = useState("0");
+
+  function decreaseHandle(e) {
+    e.preventDefault();
+    setQuantity((quantity = quantity - 1));
+    if (quantity < 0) {
+      setQuantity("0");
+    }
+  }
+
+  function increaseHandle(e) {
+    e.preventDefault();
+
+    setQuantity((quantity = quantity + 1));
+
+    if (quantity < 0) {
+      setQuantity(1);
+    }
+  }
+
   return (
     <div className='purchase-section'>
       <form>
-        <button className='subtract'>-</button>
-        <input type='text' className='quantity' value='0' />
-        <button className='add'>+</button>
+        <button onClick={decreaseHandle} className='subtract'>
+          -
+        </button>
+        <input type='text' className='quantity' value={quantity} />
+        <button onClick={increaseHandle} className='add'>
+          +
+        </button>
 
         <button className='purchaseBtn'>
           <svg
