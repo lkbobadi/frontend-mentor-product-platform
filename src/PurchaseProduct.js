@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Purchase.css";
+import "./PurchaseNav.css";
 
 export default function PurchaseProduct() {
   let [quantity, setQuantity] = useState(0);
