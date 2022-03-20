@@ -1,0 +1,81 @@
+.main-information {
+  margin-top: 130px;
+}
+subtitle {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ffa500;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 50px;
+}
+p {
+  margin-top: 35px;
+  color: grey;
+}
+
+.price {
+  position: relative;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.discount {
+  background: rgb(255, 239, 230);
+  font-size: 15px;
+  color: rgb(247, 136, 9);
+  border-radius: 5px;
+  padding: 4px;
+  width: 50px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 20px;
+  position: absolute;
+}
+
+.original-price {
+  font-size: 15px;
+  color: rgb(180, 180, 180);
+  text-decoration: line-through;
+}
+
+.subtract {
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  border: none;
+  width: 40px;
+  color: orange;
+  font-weight: 700;
+}
+.add {
+  padding: 10px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  width: 40px;
+  color: orange;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  width: 60px;
+  border: none;
+  background: rgb(241, 241, 241);
+  padding: 10px;
+  text-align: center;
+}
+.purchaseBtn {
+  margin-left: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgb(255, 195, 82);
+  color: #fff;
+  width: 250px;
+}
+
+.purchaseBtn img {
+  margin-right: 10px;
+}
