@@ -1,0 +1,10 @@
+.purchase-navigation {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.purchase-links {
+  justify-content: center;
+  align-items: center;
+}

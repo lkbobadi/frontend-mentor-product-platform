@@ -1,0 +1,32 @@
+nav {
+  border-bottom: 1px solid #d6d4d4;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin: 15px;
+}
+
+li a {
+  text-decoration: none;
+  color: #4d4d4d;
+  transition: 250ms all ease-in-out;
+  padding-bottom: 50px;
+}
+
+nav li a:hover {
+  border-bottom: 5px solid orange;
+}
+
+.logo {
+  height: 25px;
+  padding-right: 50px;
+}
