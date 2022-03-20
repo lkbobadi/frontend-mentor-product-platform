@@ -5,6 +5,15 @@
 }
 
 .purchase-links {
-  justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+
+.cart-menu {
+  margin-right: 20px;
+}
+
+.profile-menu {
+  border: 3px solid orange;
+  border-radius: 50%;
 }

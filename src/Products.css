@@ -1,0 +1,21 @@
+.gallery {
+  margin-top: 60px;
+  text-align: center;
+}
+.gallery img {
+  width: 450px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+}
+
+.extra-images {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+}
+
+.extra-images img {
+  border-radius: 10px;
+  width: 100px;
+}
