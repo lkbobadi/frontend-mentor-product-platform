@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./Purchase.css";
 
 export default function PurchaseProduct() {
-  let [quantity, setQuantity] = useState("0");
+  let [quantity, setQuantity] = useState(0);
 
   function decreaseHandle(e) {
     e.preventDefault();
     setQuantity((quantity = quantity - 1));
     if (quantity < 0) {
-      setQuantity("0");
+      setQuantity(0);
     }
   }
 
