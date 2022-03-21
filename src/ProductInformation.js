@@ -4,7 +4,7 @@ import "./Purchase.css";
 export default function ProductInformation() {
   return (
     <main className='main-information col-md-6'>
-      <subtitle>Sneaker Company</subtitle>
+      <div className='subtitle'>Sneaker Company</div>
       <h1>Fall Limited Edition Sneakers</h1>
       <p>
         These low-profile sneakers are your perfect casual wear companion.
