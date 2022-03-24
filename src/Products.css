@@ -21,6 +21,7 @@
   cursor: pointer;
 }
 
-.opacity {
-  opacity: 0.8;
+.opaque {
+  opacity: 1;
+  border: 1px solid black;
 }

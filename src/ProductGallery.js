@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./Products.css";
-import productthumb1 from "../src/images/image-product-1-thumbnail.jpg";
-import productthumb2 from "../src/images/image-product-2-thumbnail.jpg";
-import productthumb3 from "../src/images/image-product-3-thumbnail.jpg";
-import productthumb4 from "../src/images/image-product-4-thumbnail.jpg";
+
 import product1 from "../src/images/image-product-1.jpg";
 import product2 from "../src/images/image-product-2.jpg";
 import product3 from "../src/images/image-product-3.jpg";
@@ -12,43 +9,28 @@ import product4 from "../src/images/image-product-4.jpg";
 export default function ProductGallery() {
   let [mainImage, setMainImage] = useState(product1);
 
-  const images = [
-    { thumb: productthumb1, full: product1 },
-    { thumb: productthumb2, full: product2 },
-    { thumb: productthumb3, full: product3 },
-    { thumb: productthumb4, full: product4 },
-  ];
+  let [opacity, setOpacity] = useState(1);
 
-  function changeImage(e) {
-    e.preventDefault();
-    let mainImage = document.querySelector(".main-image");
-    e.target.src.replace(e.target.value);
-    mainImage.target.src = setMainImage(e.target.src);
-    console.log(e.target.src);
-  }
+  let images = [product1, product2, product3, product4];
 
-  function imageSwitch(e) {
-    e.preventDefault();
+  function clickImage(e) {
+    setMainImage(e.target.src);
+    e.target.style.opacity = setOpacity(!opacity);
   }
 
   return (
     <div className='gallery col-md-6'>
-      <img
-        src={mainImage}
-        alt='product shoes'
-        className='main-image'
-        onChange={imageSwitch}
-      />
+      <img src={mainImage} alt='product shoes' className='main-image' />
 
       <section className='extra-images'>
         {images.map((image, index) => {
           return (
             <img
-              src={image.thumb}
-              value={image.full}
-              onClick={changeImage}
+              src={image}
+              onClick={clickImage}
               key={index}
               alt={index}
+              style={{ opacity: opacity ? 1 : 0.5 }}
             />
           );
         })}

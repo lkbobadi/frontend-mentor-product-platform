@@ -29,7 +29,7 @@ export default function PurchaseProduct() {
         <button onClick={decreaseHandle} className='subtract'>
           -
         </button>
-        <input type='text' className='quantity' value={quantity} />
+        <input type='text' className='quantity' value={quantity} readOnly />
         <button onClick={increaseHandle} className='add'>
           +
         </button>
