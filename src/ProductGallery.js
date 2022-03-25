@@ -11,11 +11,17 @@ export default function ProductGallery() {
 
   let [opacity, setOpacity] = useState(1);
 
-  let images = [product1, product2, product3, product4];
+  let images = [
+    { photo: product1 },
+    { photo: product2 },
+    { photo: product3 },
+    { photo: product4 },
+  ];
 
   function clickImage(e) {
+    setOpacity(!opacity);
     setMainImage(e.target.src);
-    e.target.style.opacity = setOpacity(!opacity);
+    e.target.style.opacity = 0.7;
   }
 
   return (
@@ -25,13 +31,14 @@ export default function ProductGallery() {
       <section className='extra-images'>
         {images.map((image, index) => {
           return (
-            <img
-              src={image}
-              onClick={clickImage}
-              key={index}
-              alt={index}
-              style={{ opacity: opacity ? 1 : 0.5 }}
-            />
+            <div key={index}>
+              <img
+                src={image.photo}
+                onClick={clickImage}
+                alt={index}
+                style={{ opacity: opacity ? index.length + 0.7 : 1 }}
+              />
+            </div>
           );
         })}
       </section>
