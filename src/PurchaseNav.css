@@ -22,3 +22,7 @@
   background: pink;
   width: 300px;
 }
+
+.opacity {
+  opacity: 0.7;
+}
