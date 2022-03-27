@@ -33,9 +33,11 @@
     width: 375px;
   }
   .main-image img {
-    width: 350px;
     border-radius: 0px;
-    margin-left: -20px;
+    border: 0;
+    padding: 0;
+    width: 100vw;
+    margin: 0;
   }
 
   .extra-images {
