@@ -9,6 +9,10 @@
   letter-spacing: 2px;
 }
 
+.purchase-section {
+  margin: 0 auto;
+}
+
 h1 {
   font-size: 50px;
 }
@@ -48,7 +52,7 @@ p {
   padding: 10px;
   border: none;
   width: 40px;
-  color: orange;
+  color: rgb(241, 83, 43);
   font-weight: 700;
 }
 
@@ -57,7 +61,7 @@ p {
   padding: 10px;
   border: none;
   width: 40px;
-  color: orange;
+  color: rgb(241, 83, 43);
   font-weight: 700;
 }
 
@@ -66,6 +70,7 @@ input[type="text"] {
   border: none;
   background: rgb(241, 241, 241);
   padding: 10px;
+  border-radius: none;
   text-align: center;
 }
 .purchaseBtn {
@@ -79,8 +84,6 @@ input[type="text"] {
 }
 
 .quantity-handler {
-  margin: 0 auto;
-  text-align: center;
   margin-bottom: 5px;
 }
 
@@ -90,16 +93,18 @@ input[type="text"] {
     margin-left: 150px;
   }
 
+  .purchase-section {
+    margin-left: -10px;
+    margin-bottom: 50px;
+  }
+
   .quantity-handler input[type="text"] {
     width: 240px;
-    margin-top: -50px;
-    margin-bottom: 5px;
-    text-align: center;
   }
 
   .purchaseBtn {
     width: 320px;
-    margin-left: 0px;
+    margin-left: 25px;
   }
 
   .purchaseBtn img {

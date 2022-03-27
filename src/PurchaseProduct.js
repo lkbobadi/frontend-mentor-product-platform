@@ -24,9 +24,9 @@ export default function PurchaseProduct() {
   }
 
   return (
-    <div className='purchase-section'>
-      <form>
-        <span className='quantity-handler'>
+    <div className='container g-0'>
+      <form className='flex-column purchase-section'>
+        <span className=' quantity-handler'>
           <button onClick={decreaseHandle} className='subtract'>
             -
           </button>
@@ -35,7 +35,7 @@ export default function PurchaseProduct() {
             +
           </button>
         </span>
-        <button className='purchaseBtn'>
+        <button className=' purchaseBtn'>
           <svg
             width='22'
             height='20'
