@@ -40,6 +40,7 @@ p {
   font-size: 15px;
   color: rgb(180, 180, 180);
   text-decoration: line-through;
+  display: block;
 }
 
 .subtract {
@@ -50,10 +51,11 @@ p {
   color: orange;
   font-weight: 700;
 }
+
 .add {
+  border-radius: 0px 5px 5px 0px;
   padding: 10px;
   border: none;
-  border-radius: 0 5px 5px 0;
   width: 40px;
   color: orange;
   font-weight: 700;
@@ -71,19 +73,36 @@ input[type="text"] {
   border: none;
   border-radius: 5px;
   padding: 10px;
-  background: rgb(255, 195, 82);
+  background: rgb(241, 83, 43);
   color: #fff;
   width: 250px;
 }
 
-.purchaseBtn img {
-  margin-right: 10px;
+.quantity-handler {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
-#tooltip {
-  background-color: #333;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 4px;
-  font-size: 13px;
+@media (max-width: 500px) {
+  .original-price {
+    display: inline-block;
+    margin-left: 150px;
+  }
+
+  .quantity-handler input[type="text"] {
+    width: 240px;
+    margin-top: -50px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .purchaseBtn {
+    width: 320px;
+    margin-left: 0px;
+  }
+
+  .purchaseBtn img {
+    justify-content: center;
+  }
 }

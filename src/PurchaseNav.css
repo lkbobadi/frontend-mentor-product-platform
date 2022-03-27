@@ -1,5 +1,8 @@
-.purchase-navigation {
+.navigation {
   width: 100%;
+}
+
+.purchase-navigation {
   display: flex;
   flex-direction: row-reverse;
 }
@@ -16,6 +19,13 @@
 .profile-menu:hover {
   border: 3px solid orange;
   border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+  .navigation {
+    width: 350px;
+    display: none;
+  }
 }
 
 .pink {

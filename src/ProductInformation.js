@@ -13,7 +13,7 @@ export default function ProductInformation() {
       </p>
       <div className='price'>
         $125.00<span className='discount'> 50%</span>
-        <div className='original-price mt-2 mb-5'>$225.00</div>
+        <span className='original-price mt-2 mb-5'>$225.00</span>
       </div>
       <div className='purchase-section'>
         <PurchaseProduct />

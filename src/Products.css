@@ -2,10 +2,15 @@
   margin-top: 60px;
   text-align: center;
 }
-.gallery img {
+.gallery .main-image {
   width: 450px;
   margin-bottom: 30px;
+}
+
+.main-image img {
+  width: 460px;
   border-radius: 25px;
+  margin-left: 100px;
 }
 
 .extra-images {
@@ -21,7 +26,19 @@
   cursor: pointer;
 }
 
-.opaque {
-  opacity: 1;
-  border: 1px solid black;
+@media (max-width: 500px) {
+  .gallery .main-image {
+    flex-direction: column;
+    justify-content: center;
+    width: 375px;
+  }
+  .main-image img {
+    width: 350px;
+    border-radius: 0px;
+    margin-left: -20px;
+  }
+
+  .extra-images {
+    display: none;
+  }
 }

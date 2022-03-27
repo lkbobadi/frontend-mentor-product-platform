@@ -11,9 +11,10 @@ export default function ProductGallery() {
   let [selectImage, setSelectImage] = useState(images[0]);
 
   return (
-    <div className='gallery col-md-6'>
-      <img src={selectImage} alt='product shoes' className='main-image' />
-
+    <div className='gallery col-6 g-0'>
+      <div className='main-image'>
+        <img src={selectImage} alt='product shoes' />
+      </div>
       <section className='extra-images'>
         {images.map((image, index) => {
           return (

@@ -26,14 +26,15 @@ export default function PurchaseProduct() {
   return (
     <div className='purchase-section'>
       <form>
-        <button onClick={decreaseHandle} className='subtract'>
-          -
-        </button>
-        <input type='text' className='quantity' value={quantity} readOnly />
-        <button onClick={increaseHandle} className='add'>
-          +
-        </button>
-
+        <span className='quantity-handler'>
+          <button onClick={decreaseHandle} className='subtract'>
+            -
+          </button>
+          <input type='text' className='quantity' value={quantity} readOnly />
+          <button onClick={increaseHandle} className='add'>
+            +
+          </button>
+        </span>
         <button className='purchaseBtn'>
           <svg
             width='22'
