@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "./PurchaseNav.css";
 import logo from "../src/images/logo.svg";
-import PurchaseNav from "./PurchaseNav";
+import iconcart from "../src/images/icon-cart.svg";
+import profileart from "../src/images/image-avatar.png";
 
 export default function Navigation() {
+  let [cartPopper, setCartPopper] = useState("");
+
+  function checkCart() {
+    setCartPopper("Nothing is in the cart...");
+  }
   return (
     <ul className='navigation col-md-6'>
       <li>
@@ -25,8 +31,22 @@ export default function Navigation() {
       <li>
         <a href='/contact'>Contact</a>
       </li>
+      <li className='push'>
+        <img
+          src={iconcart}
+          alt='cart'
+          height={20}
+          onClick={checkCart}
+          className={`cart-menu ${cartPopper ? "empty" : "full"}`}
+        />
 
-      <PurchaseNav />
+        <img
+          src={profileart}
+          alt='profile icon'
+          height={50}
+          className='profile-menu'
+        />
+      </li>
     </ul>
   );
 }
