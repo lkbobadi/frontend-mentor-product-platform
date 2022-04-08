@@ -13,6 +13,11 @@ export default function Navigation() {
   }
   return (
     <ul className='navigation col-md-6'>
+      <div className='collapse-navigation'>
+        <div className='navigation-box'>
+          <div className='nav-lines'></div>
+        </div>
+      </div>
       <li>
         <img src={logo} alt='logo' className='logo' />
       </li>
