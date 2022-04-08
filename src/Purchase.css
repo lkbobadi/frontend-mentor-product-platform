@@ -85,7 +85,6 @@ input[type="text"] {
   padding: 10px;
   background: rgb(241, 83, 43);
   color: #fff;
-
   width: 250px;
 }
 
@@ -101,7 +100,6 @@ input[type="text"] {
 
   .purchase-section {
     margin-bottom: 50px;
-    margin-left: -5px;
   }
 
   .quantity-handler input[type="text"] {
@@ -111,7 +109,6 @@ input[type="text"] {
 
   .purchaseBtn {
     width: 320px;
-    margin-left: -15px;
   }
 
   .purchaseBtn img {

@@ -3,7 +3,7 @@ import "./Purchase.css";
 
 export default function ProductInformation() {
   return (
-    <main className='main-information col-md-6'>
+    <main className='main-information col-sm-6 g-0 p-4'>
       <div className='subtitle'>Sneaker Company</div>
       <h1>Fall Limited Edition Sneakers</h1>
       <p>
@@ -13,7 +13,7 @@ export default function ProductInformation() {
       </p>
       <div className='price'>
         $125.00<span className='discount'> 50%</span>
-        <div className='original-price mt-2 mb-5'>$225.00</div>
+        <span className='original-price mt-2 mb-5'>$225.00</span>
       </div>
       <div className='purchase-section'>
         <PurchaseProduct />

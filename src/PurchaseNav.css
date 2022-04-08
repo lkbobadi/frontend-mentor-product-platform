@@ -1,35 +1,19 @@
-.purchase-navigation {
+.navigation {
   width: 100%;
+}
+
+.purchase-navigation {
   display: flex;
   flex-direction: row-reverse;
-  margin: 0;
-  padding: 0;
 }
 
-.purchase-links a {
+.purchase-links {
   align-items: center;
   cursor: pointer;
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-
-.push {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  padding-left: 80%;
-}
-
-.icon {
-  width: 50px;
-  height: auto;
-  background: green;
 }
 
 .cart-menu {
-  margin-right: 55px;
+  margin-right: 20px;
 }
 
 .profile-menu:hover {
@@ -37,55 +21,16 @@
   border-radius: 50%;
 }
 
-@media (max-width: 500px) {
-  nav {
-    border-bottom: none;
-  }
-
-  nav ul {
-    flex-direction: row;
-  }
-  .logo {
-    height: auto;
-    width: 180px;
-  }
+@media (max-width: 400px) {
   .navigation {
-    height: 25px;
-  }
-  .navigation a {
+    width: 350px;
     display: none;
   }
+}
 
-  .purchase-navigation {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-left: -85px;
-  }
-
-  .purchase-navigation-section {
-    margin-left: 15px;
-  }
-
-  .cart-menu {
-    margin-right: 35px;
-  }
-
-  .purchase-navigation img {
-    width: 25px;
-    height: auto;
-  }
-
-  .profile-menu {
-    width: 30px;
-    height: auto;
-  }
-
-  .push {
-    padding-left: 0%;
-    margin-left: -135px;
-    padding-top: 15px;
-  }
+.pink {
+  background: pink;
+  width: 300px;
 }
 
 .opacity {
