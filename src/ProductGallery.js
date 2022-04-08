@@ -12,7 +12,7 @@ export default function ProductGallery() {
 
   return (
     <div className='gallery col-6 g-0'>
-      <div className='main-image g-0'>
+      <div className='main-image'>
         <img src={selectImage} alt='product shoes' />
       </div>
       <section className='extra-images'>
