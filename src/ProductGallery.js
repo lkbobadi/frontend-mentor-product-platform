@@ -13,8 +13,11 @@ export default function ProductGallery() {
   return (
     <div className='gallery col-6 g-0'>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <div className='main-image'>
 =======
+=======
+>>>>>>> parent of e8c881e (Mobile Responsive Nav)
       <div className='main-image g-0'>
 >>>>>>> parent of e8c881e (Mobile Responsive Nav)
         <img src={selectImage} alt='product shoes' />
