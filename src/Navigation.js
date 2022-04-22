@@ -11,8 +11,7 @@ export default function Navigation() {
   let [menu, setMenu] = useState("translateX(0%)");
 
   function openMenu() {
-    isMenuOpen = !isMenuOpen;
-    if (isMenuOpen === true) {
+    if (setIsMenuOpen(!isMenuOpen)) {
       setMenu("translateX(0%)");
     } else {
       setMenu("translateX(-100%)");
@@ -28,7 +27,7 @@ export default function Navigation() {
             className: "global-class-name",
           }}
         >
-          <GiHamburgerMenu onClick={openMenu} />
+          <GiHamburgerMenu onClick={openMenu} className='hamburgerNav' />
         </IconContext.Provider>
       </div>
       <ul

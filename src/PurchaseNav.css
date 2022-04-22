@@ -21,7 +21,14 @@
   border-radius: 50%;
 }
 
+.hamburgerNav {
+  display: none;
+}
+
 @media (max-width: 500px) {
+  .hamburgerNav {
+    display: block;
+  }
   .navigation {
     display: block;
   }
