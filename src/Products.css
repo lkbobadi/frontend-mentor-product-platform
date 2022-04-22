@@ -30,19 +30,8 @@
   .gallery .main-image {
     flex-direction: column;
     justify-content: center;
-    width: 375px;
   }
   .main-image img {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    width: 350px;
-=======
->>>>>>> parent of e8c881e (Mobile Responsive Nav)
-=======
->>>>>>> parent of e8c881e (Mobile Responsive Nav)
-=======
->>>>>>> parent of e8c881e (Mobile Responsive Nav)
     border-radius: 0px;
     margin-left: -20px;
   }

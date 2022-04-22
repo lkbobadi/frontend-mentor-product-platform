@@ -21,10 +21,26 @@
   border-radius: 50%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .navigation {
-    width: 350px;
+    display: block;
+  }
+
+  .cart-menu {
+    margin-right: 0px;
+  }
+
+  .navigation a {
+    margin-top: 5px;
+    line-height: 5px;
+    display: flex;
+    flex-direction: row;
+    transform: translateX(-100%);
     display: none;
+  }
+
+  .purchase-navigation {
+    margin-top: -55px;
   }
 }
 
