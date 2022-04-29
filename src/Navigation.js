@@ -18,7 +18,7 @@ export default function Navigation() {
     }
   }
   return (
-    <>
+    <div className='container'>
       <div className='navburger'>
         <IconContext.Provider
           value={{
@@ -27,7 +27,7 @@ export default function Navigation() {
             className: "global-class-name",
           }}
         >
-          <GiHamburgerMenu onClick={openMenu} className='hamburgerNav' />
+          <GiHamburgerMenu onClick={openMenu} className='burger' />
         </IconContext.Provider>
       </div>
       <ul
@@ -55,6 +55,6 @@ export default function Navigation() {
 
         <PurchaseNav />
       </ul>
-    </>
+    </div>
   );
 }

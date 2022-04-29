@@ -21,12 +21,12 @@
   border-radius: 50%;
 }
 
-.hamburgerNav {
+.burger {
   display: none;
 }
 
-@media (max-width: 500px) {
-  .hamburgerNav {
+@media (max-width: 700px) {
+  .burger {
     display: block;
   }
   .navigation {
